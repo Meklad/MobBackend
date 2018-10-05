@@ -119,6 +119,13 @@ return [
     |
     */
 
+    /* ---------------------------------------------------------------------
+     |  Logging Configuration
+     | ---------------------------------------------------------------------
+     | Available Settings: "single", "daily", "syslog", "errorlog"
+     */
+    'log' => 'daily',
+
     'providers' => [
 
         /*
@@ -150,6 +157,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Arcanedev\LogViewer\LogViewerServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         /*
          * Application Service Providers...
