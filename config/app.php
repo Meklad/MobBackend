@@ -217,6 +217,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'jwt' => Tymon\JWTAuth\Providers\JWT\Namshi::class,
+        'auth' => Tymon\JWTAuth\Providers\Auth\Illuminate::class,
+        'storage' => Tymon\JWTAuth\Providers\Storage\Illuminate::class,
 
     ],
 
